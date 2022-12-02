@@ -1,0 +1,47 @@
+body {
+    color: #fff;
+    font-family: 'Amatic SC', cursive;
+    background-color: #053f16;
+}
+#quote-box {
+    text-align: center;
+}
+.quote {
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1;
+} 
+.quote:before, .quote:after {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    position: absolute;
+} 
+#loadQuote {
+    position: relative;
+    top: 5rem;
+    left: 4rem;
+    padding: 15px 1rem;
+    font-size: 2rem;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgba(255,255,255, 0);
+    transition: .5s ;
+}
+#loadQuote:hover {
+    background-color: rgba(138, 28, 28, 0.25);
+}
+#loadQuote:focus {
+    outline: none;
+}
+@media screen and (min-width: 760px) and (max-width:884px){
+    #loadQuote {
+        left: 15rem;
+    }
+}
+@media(min-width: 900px){
+    #loadQuote {
+        left: 35rem;
+    }
+}
